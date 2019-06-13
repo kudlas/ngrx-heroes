@@ -1,0 +1,6 @@
+<div class="alerts">
+    <div *ngFor="let alert of alerts; let i = index">
+        {{ alert }}
+        <a (click)="closeAlert(i)">✕</a>
+    </div>
+</div>

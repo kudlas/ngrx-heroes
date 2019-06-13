@@ -1,0 +1,1 @@
+export const alertDelay = 1500;  // for how long should alert stay visible

@@ -1,0 +1,12 @@
+<h1>Heroes</h1>
+<div *ngIf="!!heroes" class="hero-list">
+
+    <app-list-item
+            class="card"
+            (click)="goToDetail(hero)"
+            [hero]="hero"
+            *ngFor="let hero of heroes"
+    >
+    </app-list-item>
+</div>
+

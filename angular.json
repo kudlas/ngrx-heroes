@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "alza"
+  "defaultProject": "alza",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

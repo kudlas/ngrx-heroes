@@ -1,0 +1,6 @@
+<header>
+    <h1>{{detailData.title}}</h1>
+    <app-avatar [id]="heroId"></app-avatar>
+</header>
+
+<app-update-form [data]="detailData" (valueChange)="updateHeader($event)"></app-update-form>

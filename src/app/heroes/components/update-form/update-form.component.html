@@ -1,0 +1,34 @@
+<fieldset>
+    <label>
+        Name
+        <input #name
+               (input)="valueChanged($event)"
+               (keyup.enter)="updateName()"
+               type="text"
+               placeholder="Change name"
+               [formControl]="detailForm"
+               [ngClass]="{'errorInput': !isFormOk(), 'shakeIt': shakeInput}"
+        >
+
+        <div *ngIf="!isFormOk(); else elseBlock"
+             class="alert alert-danger">
+
+            <small *ngIf="detailForm.errors.required">
+                Name is required.
+            </small>
+            <small *ngIf="detailForm.errors.minlength">
+                Name must be longer.
+            </small>
+
+        </div>
+
+        <ng-template #elseBlock>
+            <small>This field will change name of this hero...really!</small>
+        </ng-template>
+
+    </label>
+    <div class="foot">
+        <button class="btn" (click)="updateName()">Save</button>
+        <a class="btn secondary" routerLink="/heroes">&lt; Back</a>
+    </div>
+</fieldset>

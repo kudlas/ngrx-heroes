@@ -1,0 +1,5 @@
+<div class="container">
+    <a [routerLink]="'/heroes/detail/'+hero.id" class="card" *ngFor="let hero of heroes">
+        {{ hero.title }}
+    </a>
+</div>

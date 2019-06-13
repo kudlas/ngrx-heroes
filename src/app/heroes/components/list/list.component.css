@@ -1,0 +1,42 @@
+.hero-list {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/*
+.card {
+    position: relative;
+
+    flex: 0 0 200px;
+    height: 200px;
+    width: 200px;
+
+    margin: 10px;
+    padding: 10px;
+
+    background: #fff;
+    cursor: pointer;
+
+
+    text-align:center;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+    z-index: 1;
+}
+
+.card:hover {
+    background: rgb(45, 88, 144);
+    margin-top: 0;
+    color:white;
+}
+*/
